@@ -5,15 +5,24 @@ import math
 # Live Coding Examples
 # Instructors: Karelys López and Bienvenido Vélez
 
-# Example #1 ------------------------------------------------
+# Example #1 --------------------------------------------------------------
 # Function print_list(l) that prints all elements in list l
+
+
+# Tests
+# print(print_list([1,2,3,4,5,6])) # Should print 1,2,3,4,5,6 o separate lines
+
+# Example #1b --------------------------------------------------------------
+# Function print_list_with_pos(l) that prints all elements in list l together
+# with their positions
 
 # [YOUR FUNCTION HERE]
 
 # Tests
-# print(print_list([1,2,3,4,5,6])) # Should print [1,2,3,4,5,6]
+# print(print_list_with_pos([1,2,3,4,5,6]))
 
-# Example #2 ------------------------------------------------
+
+# Example #2 --------------------------------------------------------------
 # Function sum_of_list(l) that returns the sum of all the numbers in a list l
 
 # [YOUR FUNCTION HERE]
@@ -21,7 +30,20 @@ import math
 # Tests
 # print(sum_of_list([1,2,3,4])) # Should print 10
 
-# Example #3 ------------------------------------------------
+
+
+# Example #2b --------------------------------------------------------------
+# Function sum_of_list_at_even_pos(l) that returns the sum of all the numbers
+# in a
+# list l at even positions
+
+# [YOUR FUNCTION HERE]
+
+# Tests
+# print(sum_of_list_at_even_pos([1,2,3,4])) # Should print 4 (1 + 3)
+
+
+# Example #3 --------------------------------------------------------------
 # Function average_of_list(l) that returns the average of all the numbers in
 # list l.  Returns -1 if the list is empty.
 
@@ -32,7 +54,7 @@ import math
 # print(average_of_list([])) # Should print -1
 
 
-# Example #4 ------------------------------------------------
+# Example #4 --------------------------------------------------------------
 # Function filter_list_evens(l) that returns a new list containing all even
 # numbers in list l
 
@@ -42,7 +64,7 @@ import math
 # print(filter_list_evens([1,2,3,4,5,6])) # Should print [2, 4, 6]
 
 
-# Example #5 ------------------------------------------------
+# Example #5 --------------------------------------------------------------
 # Function filter_list_positives(l) that returns a new list containing all
 # positive numbers in list l
 
@@ -52,14 +74,14 @@ import math
 # print(filter_list_positives([1,-2,3,-4,5,-6])) # Should print [1, 3, 5]
 
 
-# Example #6 ------------------------------------------------
+# Example #6 --------------------------------------------------------------
 # Function list_to_string(l) that takes list of elements and returns new list
 # with corresponding strings
 
 # [YOUR FUNCTION HERE]
 
 
-# Example #7 ------------------------------------------------
+# Example #7 --------------------------------------------------------------
 # Function that returns concatenation of all strings in a list
 
 # [YOUR FUNCTION HERE]
