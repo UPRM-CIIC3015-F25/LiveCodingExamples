@@ -88,8 +88,10 @@ def number_exists(n, l):
 # Example #6
 # Function find_number(n, l) that determines the position of the first
 # occurrence of a number nwithin a list l or -1 if it doesn't exist.
+def find_number(n,l):
+    # [YOUR CODE HERE]
+    pass
 
-# [YOUR CODE HERE]
 
 # Example #7
 # Function filter_list_evens(l) that returns a new list containing all even
@@ -102,11 +104,12 @@ def filter_list_evens(l):
 # Tests
 # print(filter_list_evens([1,2,3,4,5,6])) # Should print [2, 4, 6]
 
+
 # Example #8
 # Function replace_negatives(l, n) that takes a list of numbers (int's or
 # float's) and returns a new list with all negative numbers replaced with
 # number n.
-def replace_negatives(l,n):
+def replace_negatives(l, n):
     # [YOUR CODE HERE]
     pass
 
