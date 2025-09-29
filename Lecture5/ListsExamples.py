@@ -33,7 +33,7 @@ print(print_list_with_pos([1,2,3,4,5,6]))
 def sum_of_list(numbers):
     suma = 0
     for e in numbers:
-        suma = suma + e
+        suma += e
     return suma
 
 # Tests
@@ -60,8 +60,12 @@ def sum_of_list_at_even_pos(numbers):
 # list l.  Returns -1 if the list is empty.
 
 def average_of_list(l):
-    # [YOUR CODE HERE]
-    pass
+    if len(l)==0:
+        return -1
+    suma = 0
+    for e in l:
+        suma += e
+    return suma / len(l)
 
 # Tests
 # print(average_of_list([1,2,3,4])) # Should print 2.5
@@ -71,8 +75,13 @@ def average_of_list(l):
 # Function largest_number(l) that returns the largest number with a list l of
 # numbers.  Returns None if the list is empty.
 def largest_number(l):
-    # [ YOUR CODE HERE ]
-    pass
+    max_so_far = l[0]
+    for next_number in l[1:]:
+        if next_number > max_so_far:
+            max_so_far = next_number
+    return max_so_far
+
+# Example 4b: Homework: Try to return the position of the largest
 
 
 
@@ -81,16 +90,23 @@ def largest_number(l):
 # list l and False otherwise.
 
 def number_exists(n, l):
-    # [YOUR CODE HERE]
-    pass
+    for e in l:
+        if e == n:
+            return True
+        else:
+            return False
 
+#Test cases
+#number_exists(5, [1,2,3,4,5],)
 
 # Example #6
 # Function find_number(n, l) that determines the position of the first
 # occurrence of a number nwithin a list l or -1 if it doesn't exist.
 def find_number(n,l):
-    # [YOUR CODE HERE]
-    pass
+    for idx in range(len(l)):
+        if l[idx] == n:
+            return idx
+        return -1
 
 
 # Example #7
@@ -98,9 +114,11 @@ def find_number(n,l):
 # numbers in list l
 
 def filter_list_evens(l):
-    # [YOUR CODE HERE]
-    pass
-
+    result = []
+    for e in l:
+        if e % 2 == 0:
+            result.append(e)
+    return result
 # Tests
 # print(filter_list_evens([1,2,3,4,5,6])) # Should print [2, 4, 6]
 
@@ -109,9 +127,17 @@ def filter_list_evens(l):
 # Function replace_negatives(l, n) that takes a list of numbers (int's or
 # float's) and returns a new list with all negative numbers replaced with
 # number n.
-def replace_negatives(l, n):
-    # [YOUR CODE HERE]
-    pass
+def replace_negatives(l, replacement):
+    result = []
+    for e in l:
+        if e<0:
+            result.append(replacement)
+        else:
+            result.append(e)
+    return result
+
+# Problem 8b (Homework) Write a version of replace_negatives that modifies
+# the original list instead of creating a new list.
 
 
 
