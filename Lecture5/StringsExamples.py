@@ -14,9 +14,10 @@ def count_vowels(w):
 
 
 # Example 2:
-# Function find_consonant(w) to find position of first consonant in a word w.
+# Function find_first_consonant(w) to find position of first consonant in a
+# word w.
 # Returns -1 if w contains no consonants
-def find_consonant(w):
+def find_first_consonant(w):
     # [ YOUR CODE HERE ]
     pass
 
@@ -25,7 +26,7 @@ def find_consonant(w):
 # Function replace_all_letters(word, letter, replacement) to return a new
 # string that replace all occurrences of a letter by a replacement in a given
 # word.
-def replace_all_letters(word, letter, substitute):
+def replace_all_letters(word, letter, replacement):
     # [ YOUR CODE HERE ]
     pass
 
@@ -33,7 +34,7 @@ def replace_all_letters(word, letter, substitute):
 # Function replace_all_words(sentence, word, replacement) to return a new
 # string that replace all occurrences of a word by a replacement in a given
 # sentence.
-def replace_all_letters(word, letter, substitute):
+def replace_all_words(sentence, word, replacement):
     # [ YOUR CODE HERE ]
     pass
 
