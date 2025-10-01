@@ -5,4 +5,33 @@
 
 # PART C: EXAMPLES WITH MULTI-DIMENSIONAL LISTS
 
+# UPRM CIIC 3015 Spring 2025
+# Lecture 5: Strings and Lists
+
+# Live Coding Example 7
+# Multi-dimensional lists
+
+
+songs = [
+  ['Circles', 'Post Malone', 2019, 'Psychedelic Pop'],
+  ['Ransom', 'Lil Tecca', 2018, 'Hip Hop/Rap'],
+  ['BOP', 'DaBaby', 2021, 'Hip Hop/Rap'],
+  ['Truth Hurts', 'Lizzo', 2020, 'Pop'],
+  ['223\'s (feat. 9lokknine)', 'YNW Melly', 2018, 'Hip Hop/Rap'],
+]
+
+# Retrieve the titles and artists of all songs in a given year and genre
+def songs_by_year_genre(db, year, genre):
+    #[ YOUR CODE HERE ]
+    pass
+
+# Return the title and author of the most recent song of a given genre
+def most_recent(genre):
+    #[ YOUR CODE HERE ]
+    pass
+
+
+
+
+
 
