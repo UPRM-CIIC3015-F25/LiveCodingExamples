@@ -3,7 +3,7 @@
 # Live Coding Examples
 # Instructors: Karelys López and Bienvenido Vélez
 
-# PART C: EXAMPLES WITH MULTI-DIMENSIONAL LISTS
+# PART D: EXAMPLES WITH MULTI-DIMENSIONAL LISTS
 
 # UPRM CIIC 3015 Spring 2025
 # Lecture 5: Strings and Lists
@@ -20,12 +20,17 @@ songs = [
   ['223\'s (feat. 9lokknine)', 'YNW Melly', 2018, 'Hip Hop/Rap'],
 ]
 
+# Return the number songs in a given genre
+def count_songs_by_genre(db, genre):
+    #[ YOUR CODE HERE ]
+    pass
+
 # Retrieve the titles and artists of all songs in a given year and genre
 def songs_by_year_genre(db, year, genre):
     #[ YOUR CODE HERE ]
     pass
 
-# Return the title and author of the most recent song of a given genre
+# Return the title and artists of the most recent song of a given genre
 def most_recent(genre):
     #[ YOUR CODE HERE ]
     pass
