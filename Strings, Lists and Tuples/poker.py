@@ -1,4 +1,5 @@
 import random
+from operator import truediv
 
 ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 suites = {'hearts', 'spades', 'clubs', 'diamonds'}
@@ -54,7 +55,14 @@ print("Done")
 # is_four_of_a_kind(hand)
 # Returns True if hand containts four cards with the same rank
 def is_four_of_a_kind(hand):
-    pass
+    rank_counts = {}
+    for c in hand:
+        rank = c[0]
+        rank_counts[rank] = rank_counts.get(rank, 0) + 1
+        if rank_counts[rank] == 4:
+            return True
+    return False
+
 
 # four_of_a_kind() Test Cases
 print('Four of a Kind',
@@ -67,7 +75,21 @@ print('Four of a Kind',
 # is_full_house(hand)
 # Returns true of hand contains 3 cards of one rank and 2 cards of another
 def is_full_house(hand):
-    pass
+    rank_counts = {}
+    for c in hand:
+        rank = c[0]
+        rank_counts[rank] = rank_counts.get(rank,0) + 1
+    found_2 = False
+    found_3 = False
+    for key, value in rank_counts.items():
+        if value == 2:
+            found_2 = True
+        if value == 3:
+            found_3 = True
+        if found_2 and found_3:
+            return True
+    return False
+
 
 # if_full_house() Test Cases
 print('Full  House',
@@ -83,7 +105,13 @@ print('Full  House',
 # is_flush(hand)
 # Returns True if hand contains 5 cards of the same suit
 def is_flush(hand):
-    pass
+    suit_counts = {}
+    for c in hand:
+        suit = c[1]
+        suit_counts[suit] = suit_counts.get(suit,0) + 1
+        if suit_counts[suit] == 5:
+            return True
+    return False
 
 # is_flush(hand) Test Cases
 print("Flush: ", is_flush({('A', 'spades'), ('J', 'spades'), ('Q', 'spades'),
@@ -92,14 +120,24 @@ print("Flush: ", is_flush({('A', 'spades'), ('J', 'spades'), ('Q', 'spades'),
                            ('3', 'hearts'), ('4', 'spades')}))
 
 
-def rank_index(card):
-    return ranks.index(card[0])
+def rank_index(rank):
+    return ranks.index(rank)
 
 # is_straight(hand)
 # Returns True if the hand contains five cards of sequential rank, not all of
 # the same suit
 def is_straight(hand):
-    pass
+    # Extract ranks from hand
+    ranks_in_hand = []
+    for c in hand:
+        ranks_in_hand.append(c[0])
+    # Sort ranks by their position among ranks
+    ranks_in_hand.sort(key=rank_index)
+    index_of_first_rank = rank_index(ranks_in_hand[0])
+    return ranks_in_hand == ranks[index_of_first_rank:index_of_first_rank+5]
+
+
+
 
 
 print('Straight: ',
