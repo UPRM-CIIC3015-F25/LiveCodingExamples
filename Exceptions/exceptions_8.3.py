@@ -1,7 +1,7 @@
 # UPRM CIIC 3015 Spring 2025
-# Lecture 9: Classes and Objects
+# Lecture 8: Files and Exceptions
 
-# Live Coding Example 9_1
+# Live Coding Example 8_3
 
 
 def file_open_exception_example():
